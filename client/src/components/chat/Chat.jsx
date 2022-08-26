@@ -15,7 +15,7 @@ function Chat() {
   const [messages, setMessages] = useState([]);
 
 
-  const ENDPOINT = 'https://aliblackeye-chat-app.herokuapp.com/';
+  const ENDPOINT = process.env.REACT_APP_ENDPOINT;
   // const ENDPOINT = 'localhost:5000/';
   const location = document.location;
 
