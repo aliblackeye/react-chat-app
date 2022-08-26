@@ -46,6 +46,11 @@ io.on("connection", (socket) => {
       users: getUsersInRoom(user.room),
     });
 
+    socket.broadcast.to(user.room).emit("message", {
+      user: "admin",
+      text: `${user.name} sohbete katıldı!`,
+    });
+
     callback();
   });
 
