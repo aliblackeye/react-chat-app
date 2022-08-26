@@ -1,0 +1,69 @@
+.message-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px;
+
+  .sender {
+    color: gray;
+  }
+
+  .message-box {
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 80%;
+
+    .message-text {
+      max-width: 300px;
+      overflow-wrap: break-word;
+      letter-spacing: 0;
+      float: left;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.current {
+  .message-box {
+    background-color: #3bb1ff;
+    .message-text {
+      color: #fff;
+    }
+  }
+}
+
+.other {
+  .message-box {
+    background-color: rgb(149, 225, 0);
+
+    .message-text {
+      color: #fff;
+    }
+  }
+}
+
+.admin {
+  justify-content: center !important;
+  .message-box {
+    background-color: #f0f0f0;
+    .message-text {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+  .sender {
+    display: none;
+  }
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}

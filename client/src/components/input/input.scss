@@ -1,0 +1,77 @@
+.chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.5);
+
+  input {
+    background-color: transparent;
+    color: #000;
+    border: 0;
+    outline: 0;
+    width: 92%;
+
+    &::placeholder {
+      color: gray;
+    }
+  }
+
+  .emoji-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .emoji-picker-react {
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+    }
+    .emoji-icon {
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #555;
+
+      &.active {
+        color: rgb(241, 202, 6);
+      }
+      &.active:hover {
+        color: rgb(241, 202, 6);
+      }
+      &:hover {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      &:active {
+        transform: scale(0.93);
+      }
+    }
+  }
+
+  .send-button {
+    border: 0;
+    outline: 0;
+    background-color: #3bb1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.97);
+    }
+
+    .send-icon {
+      width: 18px;
+      height: 18px;
+      color: #fff;
+    }
+  }
+}

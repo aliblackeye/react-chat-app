@@ -1,0 +1,27 @@
+.info-bar {
+  width: 100%;
+  background-color: #3bb1ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: flex-start;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  .left-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .room-name {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  .right-container {
+    display: flex;
+    align-items: center;
+  }
+}
